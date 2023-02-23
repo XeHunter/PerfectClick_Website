@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Perfect Click</title>
+<link rel= "shortcut icon" type = "image/png" href="logo4.png">
+<style>
+*{
+	margin: 0;
+	padding:0;
+	font-family: Century Gothic;
+	}
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(photog.jpg);
+	background-position: center;
+	background-size: cover;
+	}
+ul{
+	list-style-type:none;
+	float: right;
+	margin-top: 25px;
+	}
+ul li{
+	display: inline-block;
+	}
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	transition: 0.6s ease;
+	
+}
+ul li a:hover{
+	background-color: white;
+	color: black;
+
+}
+ul li.active a{
+	background-color: white;
+	color: black;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+	
+}
+.logo{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 60px;
+}
+h2{
+	position: absolute;
+	color: white;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+.button{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.btn{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	transition: 0.6s ease;
+	
+}
+.btn:hover{
+	background-color: white;
+	color: black;
+}
+img{
+	width: 100%;
+    border-radius: 4px;
+
+}
+</style>
+</head>
+<body>
+<div class = "main">
+<div class = "logo">
+<img src = "logoo.png">
+</div>
+<ul>
+<li class ="active"><a href="home.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<h1>Introducing Perfect Click</h1>
+<h2>Creatively Capturing Moments</h2>
+<div class = "button" >
+<a href ="services.html" class = "btn">Get Started</a> 
+</div>
+</body>
+</html>

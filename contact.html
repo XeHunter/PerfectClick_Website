@@ -1,0 +1,237 @@
+<html>
+<head>
+<title>Perfect Click</title>
+<link rel= "shortcut icon" type = "image/png" href="logo4.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<style>
+*{
+	margin: 0;
+	padding:0;
+	font-family: Century Gothic;
+	}
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(52.jpg);
+	background-position: center;
+	background-size: cover;
+	}
+ul{
+	list-style-type:none;
+	float: right;
+	margin-top: 25px;
+	}
+ul li{
+	display: inline-block;
+	}
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	transition: 0.6s ease;
+	
+}
+ul li a:hover{
+	background-color: white;
+	color: black;
+
+}
+ul li.active a{
+	background-color: white;
+	color: black;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+	
+}
+.logo{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+img{
+	width: 100%;
+    border-radius: 4px;
+
+}
+.contact-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info{
+  color: #fff;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+  margin-top: 12%;
+}
+
+.contact-info i{
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.contact-form{
+  max-width: 700px;
+  margin-right: 50px;
+  margin-top: 12%;
+}
+
+.contact-info, .contact-form{
+  flex: 1;
+}
+
+.contact-form h2{
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact-form .text-box{
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .text-box:first-child{
+  margin-right: 15px;
+}
+
+.contact-form textarea{
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .send-btn{
+  float: center;
+  background: white;
+  color: black;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.contact-form .send-btn:hover{
+  background: #ffc107;
+}
+.map{
+	margin-left: 10%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.area{
+	background-color: black;
+	margin-top: 100px;
+	margin-bottom:0;
+}
+.map h2{
+	color: white;
+}
+.map p{
+	padding-top: 20px;
+}
+.icon{
+ margin-left: 10%;
+ color: white;
+}
+.icon i{
+ padding:20px;
+ font-size:20px;
+ }
+ @media screen and (max-width: 950px){
+  .contact-section{
+    flex-direction: column;
+  }
+
+  .contact-info, .contact-form{
+    margin: 30px 50px;
+  }
+
+  .contact-form h2{
+    font-size: 30px;
+  }
+
+  .contact-form .text-box{
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class = "main">
+<div class = "logo">
+<img src = "logoo.png">
+</div>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li class ="active"><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+    <div class="contact-section">
+      <div class="contact-info">
+        <div><i class="fas fa-map-marker-alt"></i>Byculla East, Mumbai, India</div>
+        <div><i class="fas fa-envelope"></i>perfectclick@gmail.com</div>
+        <div><i class="fas fa-phone"></i>+91 5555 000 555</div>
+        <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form class="contact" action="contact.php" method="post">
+          <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+          <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <input type="submit" name="submit" class="send-btn" value="Send">
+        </form>
+      </div>
+    </div>
+<div class = "area">
+	<div class="map">
+        <h2>Our Direction</h2>
+		<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385.28452670736317!2d72.8403801591774!3d18.981306388137604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce5088988553%3A0xbd4059074252dd94!2sPicture%20Perfect%20Click!5e0!3m2!1sen!2sin!4v1631630336819!5m2!1sen!2sin" 
+		width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></P>
+		</div>
+		<div class = "icon">
+		<i class="fab fa-instagram"></i>
+		<i class="fab fa-facebook-square"></i> 
+		<i class="fab fa-twitter-square"></i>
+	</div>
+	</div>
+</body>
+</html>
